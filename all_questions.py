@@ -257,28 +257,28 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = ""
+    answers["(a) explain diag entries, Matrix 1"] = "The two diagonal entries that are more blue and crisp suggest that clusters B and C are more tightly knit, showing higher cohesion, compared to the other two clusters, A and D."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = ""
+    answers["(a) explain non-diag entries, Matrix 1"] = "The first and third rows represent clusters A and C because the colors of their off-diagonal entries differ, showing varying distances to other clusters. Specifically, A is closest to C (blue), then B (green), and farthest from D (yellow); the same pattern applies to C. The second row matches cluster B, with equal distances to A and C (green) and the greatest distance to D (red). The fourth row matches cluster D, with equal distances from A and C (yellow) and the greatest distance from B (red), illustrating the distinct spatial relationships between these clusters."
 
     # type: string
     answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = ""
+    answers["(a) explain diag entries, Matrix 2"] = "The presence of two diagonal entries that are more blue and crisp compared to the others suggests that two clusters, B and C, exhibit better cohesion, meaning they are more tightly grouped, than the other two clusters, A and D."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = ""
+    answers["(a) explain non-diag entries, Matrix 2"] = "Rows with less crisp diagonal entries (rows 1 and 4) have all  different colors, indicating that all other clusters have different  distances from these clusters (e.g: Cluster A is the nearest to B,  followed by C and then D, no 2 clusters have same distance to cluster A).  2. Rows with more crisp diagonal entries have 2 same colors (other than  the diagonal), indicating that it has same distance to 2 clusters,  and is the furthest from 1 cluster (e.g: B’s distance to A and C is  similar, but is the furtherst from D)"
 
     # type: string
     answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = ""
+    answers["(a) explain diag entries, Matrix 3"] = "The two diagonal entries that are more blue and crisp compared to the others indicate that clusters B and C have better cohesion, meaning they are more tightly knit or compact, compared to the other two clusters, A and D."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = ""
+    answers["(a) explain non-diag entries, Matrix 3"] = "The presence of two similar and one different color in the off-diagonal entries of all rows indicates that each cluster is relatively closer to two other clusters than to the remaining one. For example, Cluster B is similarly close to Clusters A and C when compared to its distance from Cluster D."
 
     # type: string
     answers["(b) Row 1"] = "Cluster A"
@@ -293,16 +293,16 @@ def question8():
     answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = ""
+    answers["(b) Row 1 explain"] = "A less crisp diagonal entry suggests the cluster is less cohesive, meaning its points are not as tightly grouped. The different colors in all off-diagonal entries indicate that the cluster has varying distances to other clusters, being closest to B, then to C, and furthest from A."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = ""
+    answers["(b) Row 2 explain"] = "A more crisp diagonal entry indicates the cluster is cohesive, meaning its points are closely grouped. When two out of three off-diagonal entries share the same color, it shows that two other clusters (A and C, despite the entry for A being less crisp) are closer to this cluster. This arrangement suggests the cluster is furthest from one other cluster (D)."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = ""
+    answers["(b) Row 3 explain"] = "The explanation is simimilar to row 2"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = ""
+    answers["(b) Row 4 explain"] = "The explanation, similar to row 1 but in inverted order, suggests that while the cluster remains cohesive (indicated by a crisp diagonal entry), the distances to other clusters are reversed. This means the cluster is closest to what was previously the furthest (D) and furthest from what was previously the closest (A), with the middle distances to B and C also adjusting accordingly."
 
     return answers
 
@@ -348,7 +348,7 @@ def question10():
     answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "DBSCAN can identify clusters matching patterns like the nose, eyes, and mouth because it's good at finding clusters in areas with varying densities and shapes, including both dense and sparse regions."
 
     # type: string
     answers["(b) Figure (a)"] = "No"
@@ -357,10 +357,10 @@ def question10():
     answers["(b) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "K-means is better for datasets with clusters of similar density, not so much for areas with different densities. However, in high-density areas where clusters are tightly packed and clearly separated, K-means can still be effective."
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "DBSCAN clustering is preferred for its flexibility in handling both high and low-density areas and its ability to identify clusters with irregular shapes, making it versatile for various data patterns."
 
     return answers
 
