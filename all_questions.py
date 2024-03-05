@@ -117,13 +117,13 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 1
+    answers["(a) Circle (a)"] = 0
 
     # type: int
     answers["(a) Circle (b)"] = 1
 
     # type: int
-    answers["(a) Circle (c)"] = 1
+    answers["(a) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = "Because A and B both have the same number of points (100) and are equally distant, one centroid will be drawn towards A. Consequently, the right side of B, making up two-thirds of it, will then have two centroids. Circle C, with a significantly higher number of points (100,000) and equally spaced to B, will definitely secure a centroid because of its stronger attraction, despite not having one initially. The balanced distribution of points in A and B ensures that each will attract a centroid due to their comparable pull."
@@ -342,7 +342,7 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = "Yes"
+    answers["(a) Figure (a)"] = "No"
 
     # type: string
     answers["(a) Figure (b)"] = "Yes"
