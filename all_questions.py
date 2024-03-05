@@ -11,19 +11,19 @@ def question1():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Agglomerative hierarchical clustering is like building a family tree for data points, combining them step by step based on closeness. K-means clustering puts each data point in the nearest group but can be misled by very distant points. "
+    answers["(a) explain"] = "Agglomerative hierarchical clustering is like building a family tree for data points, combining them step by step based on closeness. K-means clustering puts each data point in the nearest group but can be misled by very distant points."
 
     # type: bool (True/False)
     answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "K-means clustering produces varying results due to the randomness in selecting initial centroids, while Agglomerative hierarchical clustering consistently yields the same result each time as it is deterministic. "
+    answers["(b) explain"] = "K-means clustering produces varying results due to the randomness in selecting initial centroids, while Agglomerative hierarchical clustering consistently yields the same result each time as it is deterministic."
 
     # type: bool (True/False)
     answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "K-means clustering is known for its efficiency in terms of time and memory usage compared to agglomerative hierarchical clustering. While K-means is considered one of the most efficient clustering algorithms, there are other algorithms like the leader algorithm that offer alternative approaches to clustering.
+    answers["(c) explain"] = "K-means clustering is known for its efficiency in terms of time and memory usage compared to agglomerative hierarchical clustering. While K-means is considered one of the most efficient clustering algorithms, there are other algorithms like the leader algorithm that offer alternative approaches to clustering."
 
 
     # type: bool (True/False)
