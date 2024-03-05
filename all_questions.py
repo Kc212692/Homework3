@@ -11,55 +11,56 @@ def question1():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Agglomerative hierarchical clsutering builds clusters stey by step by merging or splitting based on distance metrics and k-means assigns points to the nearest cluster center, potentially skewing results if outliers are present. "
+    answers["(a) explain"] = "Agglomerative hierarchical clustering is like building a family tree for data points, combining them step by step based on closeness. K-means clustering puts each data point in the nearest group but can be misled by very distant points. "
 
     # type: bool (True/False)
     answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "K-means is randomness in initial centroids which leads to different results.Where as Agglomerative hierarchical clsutering is deterministic which leads to same result every time. "
+    answers["(b) explain"] = "K-means clustering produces varying results due to the randomness in selecting initial centroids, while Agglomerative hierarchical clustering consistently yields the same result each time as it is deterministic. "
 
     # type: bool (True/False)
     answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "Though K-means take less time and memory than agglomerative hierarchical clustering and is the most effcient clustering algorithm possible., there are more algorithims possible for example the leader algorithim. "
+    answers["(c) explain"] = "K-means clustering is known for its efficiency in terms of time and memory usage compared to agglomerative hierarchical clustering. While K-means is considered one of the most efficient clustering algorithms, there are other algorithms like the leader algorithm that offer alternative approaches to clustering.
+
 
     # type: bool (True/False)
     answers["(d)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = "Splitting decreases sum of squared errors as we have two centroids for same set, which effect into the reduction of distance to nearest centroids."
+    answers["(d) explain"] = "Splitting a cluster into two lowers the total error because we now have two centers instead of one. This means each point is closer to its nearest center, reducing the overall distance."
 
     # type: bool (True/False)
     answers["(e)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = "Sum of squared errors(SSE) is an inverse measure of the coheasion of clusters, thus SSE decreases and cohesion increases, vice-versa is also true."
+    answers["(e) explain"] = "The sum of squared errors (SSE) shows how tightly grouped a cluster is. When SSE goes down, it means the cluster is more cohesive. If SSE goes up, the cluster's cohesion decreases."
 
     # type: bool (True/False)
     answers["(f)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(f) explain"] = "For k-means, the sum of squares between(SSB) is the measure of separation of clusters. Therefore SSB increases, seperation increases, vice-versa is also true"
+    answers["(f) explain"] = "In k-means, the sum of squares between (SSB) measures how far apart clusters are. So, if SSB goes up, it means clusters are more spread out from each other. If SSB goes down, clusters are closer together."
 
     # type: bool (True/False)
     answers["(g)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(g) explain"] = "k-means is independent for cohesion and seperation that means improving cohesion doesn't necessary improve seperation"
+    answers["(g) explain"] = "In k-means, making clusters tighter (improving cohesion) doesn't necessarily mean they'll be further apart from each other (improving separation)."
 
     # type: bool (True/False)
     answers["(h)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = "The total sum of squares (TSS) is sum of SSE and the between SSB as per the k-means.Also TSS is constant during the k-means clustering process."
+    answers["(h) explain"] = "In k-means clustering, the total sum of squares (TSS) is the combination of the sum of squared errors (SSE) and the sum of squares between (SSB). Additionally, the TSS remains constant throughout the k-means clustering process."
 
     # type: bool (True/False)
     answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "SSB is measure of cluster seperation and SSE is inverse measure of cluster cohesion. Thus cohesion increasion, SSE decreases and seperation(SSB) increases."
+    answers["(i) explain"] = "SSB measures how far apart clusters are, while SSE indicates how close together points within a cluster are, but in reverse. So, when clusters become tighter (more cohesive), SSE goes down and SSB, which shows separation, goes up."
 
     return answers
 
@@ -74,19 +75,19 @@ def question2():
     answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "As shown in figure, clusters are too far away from centroid to attract points from other."
+    answers["(a) explain"] = "The figure illustrates that the clusters are positioned too far from their centroids to draw points from neighboring clusters."
 
     # type: bool (True/False)
     answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Since the shaded regions are close to each other, as shown in figure, the clusters will have points from both of the shaded regions."
+    answers["(b) explain"] = "The figure shows that the shaded areas are near each other, meaning the clusters will include points from both shaded regions."
 
     # type: bool (True/False)
     answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "The 12.5 centroid is far away from all points and all other clusters will become empty."
+    answers["(c) explain"] = "The centroid at 12.5 is too distant from all points, resulting in all other clusters being empty."
 
     return answers
 
@@ -125,7 +126,7 @@ def question4():
     answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Due to the equal number of distance and points(100 points) in A and B, 1 centroid will be attracted towrds the A. The right side of B(2/3rd portion) now has the 2 centroids. Circle C has more points (100,000 points) and is equally placed to B, it guarantees to hold a centroid due to the stronger pull, despite the initial absence. Even distribution of points in A and B means each should attract a centroid due to their similar pull."
+    answers["(a) explain"] = "Because A and B both have the same number of points (100) and are equally distant, one centroid will be drawn towards A. Consequently, the right side of B, making up two-thirds of it, will then have two centroids. Circle C, with a significantly higher number of points (100,000) and equally spaced to B, will definitely secure a centroid because of its stronger attraction, despite not having one initially. The balanced distribution of points in A and B ensures that each will attract a centroid due to their comparable pull."
 
     # type: int
     answers["(b) Circle (a)"] = 1
@@ -137,7 +138,7 @@ def question4():
     answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "The centroid will stay at A due to the existing points in A and absence of stronger pull. Stronger pull from C will attract one centroid from B. Thus all the three circles will have 1, 1, 1 centroids."
+    answers["(b) explain"] = "The centroid will remain at A because of the points already there and the lack of a stronger attraction elsewhere. C's stronger pull will draw one centroid away from B. Therefore, each of the three circles, A, B, and C, will end up having one centroid each."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -149,7 +150,7 @@ def question4():
     answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = "Because circles A and B are close together but far apart from circle C, the points from both will be assigned to the centroid in A. The points in C will be divided between two centroids, each with 50,000 points.   Because A and B have the same number of points, the centroid in A will move between the two. The centroids in C will move apart slightly, but they will still be in C, with half of the points."
+    answers["(c) explain"] = "Since circles A and B are near each other but distant from circle C, points from both A and B will be grouped with the centroid in A. Circle C's points will be split among two centroids, with each holding 50,000 points. Because A and B have an equal number of points, the centroid in A will shift between them. Meanwhile, the centroids in C will slightly separate but remain within C, each managing half of the points."
 
     return answers
 
@@ -164,13 +165,13 @@ def question5():
     answers["(a)"] = {'Group A', 'Group B'}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Group A and B can be merged since the rightmost point of A and leftmost point of B has the smallest single link distance."
+    answers["(a) explain"] = "Groups A and B can be combined because the rightmost point of A and the leftmost point of B are the closest to each other, indicating the shortest single-link distance between the two groups."
 
     # type: set
     answers["(b)"] = {'Group A', 'Group C'}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ".Group A and C can be merged since the rightmost point of A and farthest point of C has the smallest complete link distance."
+    answers["(b) explain"] = "Groups A and C can be merged because the rightmost point of A and the farthest point of C have the shortest complete-link distance between them, making them the closest pair for merging under this criterion."
 
     return answers
 
@@ -236,13 +237,13 @@ def question7():
     answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = "Cluster 4 has highest entropy due to more even distribution of categories."
+    answers["(a) explain"] = "Cluster 4 has the highest entropy because its categories are more evenly distributed, leading to greater uncertainty or diversity within the cluster."
 
     # type: string
     answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = "Cluster 1 has low entropy due to the unequal distribution.The vast majority of its data points fall into a single category, making it highly homogeneous." 
+    answers["(b) explain"] = "Cluster 1 has low entropy because its data points are mostly from one category, making it very uniform or similar throughout." 
     return answers
 
 
@@ -329,7 +330,7 @@ def question9():
     answers["(e)"] = ['Partitional', 'Exclusive', 'Complete']
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = "Letter grades are distinct categories that do not overlap (exclusive), each student receives only one grade per class (exclusive), and all students in the class will receive a grade (complete)."
+    answers["(e) explain"] = "Letter grades are unique categories that don't overlap, meaning each category is exclusive. Each student gets only one grade per class, ensuring exclusivity. Additionally, every student in the class will be assigned a grade, making the system complete."
 
     return answers
 
